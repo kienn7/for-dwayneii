@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>for you</title>
+</head>
+<body>
+
+    <div class="card-container">
+        <h3>Hello, pretty! I hope your day is going well. Just click or press the bunny below.</h3>
+
+        <div class="content">
+            <button type="button" class="bunny-button" onclick="showHome()">
+                <img src="images/tkthao219-bunny.gif">
+            </button> 
+        </div>
+    </div>
+
+    <div class="home-container" style="display: none;"> 
+
+        <div class="home">
+            <div class="home-gif">
+                <img src="images/tkthao219-bunny2.gif">
+            </div>
+
+            <h3>Hello, Dwayneii. I made this for you.</h3>
+            <h4>Just click or press those bunnies</h4>
+        </div>
+
+        <div class="message-button">
+            <button class="image-button" id="button1" onclick="openSweetAlert1()">
+                <img src="images/tkthao219-bunny3.gif" alt="Button Image">
+            </button>
+
+            <button class="image-button" id="button2" onclick="openSweetAlert2()">
+                <img src="images/kiss.gif" alt="Button Image">
+            </button>
+
+            <button class="image-button" id="button3" onclick="openSweetAlert3()">
+                <img src="images/tkthao219-bunny (1).gif" alt="Button Image">
+            </button>
+
+            <button class="image-button" id="button4" onclick="openSweetAlert4()">
+                <img src="images/tkthao219-tooji8.gif" alt="Button Image">
+            </button>
+
+            <button class="image-button" id="button5" onclick="openSweetAlert5()">
+                <img src="images/cute-bunny.gif" alt="Button Image">
+            </button>
+
+            <button class="image-button" id="button6" onclick="openSweetAlert6()">
+                <img src="images/tkthao219-bubududu9.gif" alt="Button Image">
+            </button>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+    body {
+        background-color: rgb(155, 197, 183);
+        font-family: 'Poppins', sans-serif;
+        min-height: 100vh;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .card-container {
+        width: 450px;
+        background: rgba(97, 158, 124, 0.5);
+        padding: 2rem;
+        border-radius: 10px;
+        position: relative;
+        margin: 20px auto;
+        text-align: center;
+        margin-top: 170px;
+    }
+
+    .card-container h3 {
+        text-align: center;
+    }
+
+
+    .home-container {
+        width: 450px;
+        margin: 20px auto;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-gif img {
+        width: 100px;
+    }
+
+    .message-button {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+      gap: 20px; /* Adjust the gap between buttons */
+    }
+
+    /* Style for the button */
+    .bunny-button,
+    .image-button {
+      border: none;
+      padding: 0;
+      margin: 0;
+      background: none;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    /* Style for the image */
+    .image-button img {
+      width: 150px; /* Adjust the width as needed */
+      height: 150px; /* Adjust the height as needed */
+      border-radius: 10px; /* Optional: Rounded corners */
+    }
+</style>
+
+<script>
+    function showHome() {
+        // Get the references to the card-container and home divs
+        var cardContainer = document.querySelector('.card-container');
+        var homeDiv = document.querySelector('.home-container');
+
+        // Hide the card-container and show the home div
+        cardContainer.style.display = 'none';
+        homeDiv.style.display = 'block';
+    }
+
+    function openSweetAlert1() {
+      Swal.fire({
+        text: "hi, i just want to say that you're pretty, beautiful, gorgeous, lovely, charming, stunning, and adorable. pota lahat na, shet luluhuran talaga",
+        confirmButtonText: 'close',
+        customClass: {
+          popup: 'animate fadeIn' 
+        },
+        hideClass: {
+          popup: 'animate fadeOut' 
+        }
+      });
+    }
+
+    function openSweetAlert2() {
+      Swal.fire({
+        text: "always remember that i am very proud of you, my love.",
+        confirmButtonText: 'close',
+        customClass: {
+          popup: 'animate fadeIn' 
+        },
+        hideClass: {
+          popup: 'animate fadeOut' 
+        }
+      });
+    }
+
+    function openSweetAlert3() {
+      Swal.fire({
+        text: "i'm always excited to talk to you, and i just want you to know that you brighten up my days.",
+        confirmButtonText: 'close',
+        customClass: {
+          popup: 'animate fadeIn' 
+        },
+        hideClass: {
+          popup: 'animate fadeOut' 
+        }
+      });
+    }
+
+
+    function openSweetAlert4() {
+      Swal.fire({
+        text: "always take care of yourself po. uminom kana ng meds, panay ka singhot tuwing gabi para akong sipon mo na sinisinghot mo everytime na magkacall tayo. alagaan mo sarili mo te, di mo pa ako nagiging gf oh yun pa naman ang goal.",
+        confirmButtonText: 'close',
+        customClass: {
+          popup: 'animate fadeIn' 
+        },
+        hideClass: {
+          popup: 'animate fadeOut' 
+        }
+      });
+    }
+
+
+    function openSweetAlert5() {
+      Swal.fire({
+        text: "I want you to know that I really like you a lot. I admire your personality, your mindset, your smile, your laugh, your eyes, your vibe, and the way you treat me and others. I like you because you are a good person. You always make me laugh and smile. remember that night na tinanong mo ako kung anong need para maging gf ako, di ko rin alam kung ano isasagot ko nun sayo and nagulat ako nung sinabi mong ready kana, di ko rin alam kung paano ako mag rerespond nun sayo. i'll be honest with you, love. ready na rin ako nun pero ayun nga we need more time pa and i will wait for you. wala e, tinamaan talaga HAHAHHAHAH. and yeah i just want you to know that i love everything about you, love.",
+        confirmButtonText: 'close',
+        customClass: {
+          popup: 'animate fadeIn' 
+        },
+        hideClass: {
+          popup: 'animate fadeOut' 
+        }
+      });
+    }
+
+
+    function openSweetAlert6() {
+      Swal.fire({
+        text: "namimiss kita lagi, kapal talaga ng mukha mo. mwaa",
+        confirmButtonText: 'close',
+        customClass: {
+          popup: 'animate fadeIn' 
+        },
+        hideClass: {
+          popup: 'animate fadeOut' 
+        }
+      });
+    }
+
+   
+</script>
